@@ -27,7 +27,7 @@
 
     return (
         <div>
-        <h1>Favoriete</h1>
+        <h1 className='favo-txt'>Favoriete</h1>
 
         <div className="favorites">
             {favoCoins.map((coin, index) => (
