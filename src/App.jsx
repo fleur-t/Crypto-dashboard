@@ -5,6 +5,8 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Coins from './Coins'
 import CoinDetails from './CoinDetail'
 import MarketShare from './MarketShare'
+import Header from './header'
+import Footer from './footer'
 
 // useParams();
 
@@ -23,11 +25,7 @@ function App() {
 
   return (
     <>
-      <header>
-        <h1>Crypto Dashboard</h1>
-        <h2><Link to={"/"}>Bekijk Coins</Link></h2>
-        <h2><Link to={"/market-share"}>Bekijk Marktaandeel</Link></h2>
-        </header>
+      <Header />
       <main>
         <Routes>
           <Route path={"/"} element={<Coins />}/>
@@ -35,6 +33,7 @@ function App() {
           <Route path={"/market-share"} element={<MarketShare />} />  
         </Routes>
       </main>
+      <Footer />
     </>
 
   )
